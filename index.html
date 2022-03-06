@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal Conversion</title>
+</head>
+<body>
+    <h1>Decimal to Any Base</h1>
+    <div class="sideBySide">
+    <form action="">
+        <p>Enter the decimal number:</p>
+        <input type="number" name="fromDecimal" id="fromDecimal">
+        <p>Choose which base to convert to:</p>
+        <input type="number" name="toBase" id="toBase" max="16" min="2"><br>
+        
+        <p>Result: <span class="result1"></span></p>
+    </form>
+    <button onclick="decimalToAnyBase()">Convert</button>   
+    </div>
+    <h1>Any Base to Decimal</h1>
+    <div class="sideBySide">
+        <form action="">
+            <p>Enter Number:</p>
+            <input type="text" name="fromBase" id="fromBase">
+            <p>Enter Base:</p>
+            <input type="number" name="base" id="base"><br>
+        <p>Result: <span class="result2"></span></p>
+
+        </form>
+        <button onclick="fromBaseToDecimal()">Convert</button>    
+
+        </div>
+    <script src="code.js"></script>
+</body>
+</html>
